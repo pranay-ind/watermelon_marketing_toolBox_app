@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="get a custom message by clicking the wa.me link"
+    />
+    <title>Whatsapp Message Link Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <hgroup>
+        <h1>Whatsapp Message Link Generator</h1>
+        <p>get a custom message by clicking the wa.me link</p>
+      </hgroup>
+    </header>
+    <main class="container">
+      <fieldset>
+        <input
+          type="text"
+          id="numberInput"
+          placeholder="Enter Whatsapp Phone number"
+        />
+
+        <select id="chooseMessage">
+          <option value="Hi! I'm interested in your product">
+            Hi! I'm interested in your product
+          </option>
+          <option value="Hello, can we connect regarding a service">
+            Hello, can we connect regarding a service
+          </option>
+          <option value="Please share more details">
+            Please share more details
+          </option>
+          <option value="Hi let's code ">Hi let's code</option>
+        </select>
+
+        <input
+          type="submit"
+          value="Generate Whatsapp link and Message"
+          id="generateBtn"
+        />
+      </fieldset>
+      <div id="app"></div>
+    </main>
+    <footer class="container neog-footer">
+      <small>
+        go from zero to hero at full stack development with
+        <a href="https://neog.camp">neog.camp</a>
+      </small>
+    </footer>
+    <script>
+      function generateWhatsappLinkAndMessage() {
+        const phone = document.getElementById("numberInput").value;
+        const message = document.getElementById("chooseMessage").value;
+        const app = document.getElementById("app");
+
+        const encodedMessage = encodeURIComponent(message);
+        const link = "https://wa.me/+91" + phone + "?text=" + encodedMessage;
+        app.innerText = link;
+      }
+
+      const buttonElement = document.getElementById("generateBtn");
+
+      buttonElement.addEventListener("click", generateWhatsappLinkAndMessage);
+    </script>
+  </body>
+</html>

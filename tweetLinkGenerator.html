@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="get a custom message by clicking the wa.me link"
+    />
+    <title>Twitter Message Link Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <hgroup>
+        <h1>Twitter Message Link Generator</h1>
+        <p>get a custom tweet link</p>
+      </hgroup>
+    </header>
+    <main class="container">
+      <fieldset>
+        <input
+          type="text"
+          id="messageInput"
+          placeholder="Enter your custom message"
+        />
+
+        <input
+          type="submit"
+          value="Generate Tweet link and Message"
+          id="generateBtn"
+        />
+      </fieldset>
+      <div id="app"></div>
+    </main>
+    <footer class="container neog-footer">
+      <small>
+        go from zero to hero at full stack development with
+        <a href="https://neog.camp">neog.camp</a>
+      </small>
+    </footer>
+    <script>
+      function generateTwitterLinkAndMessage() {
+        const message = document.getElementById("messageInput").value;
+        const app = document.getElementById("app");
+
+        const encodedMessage = encodeURIComponent(message);
+        const link =
+          "https://twitter.com/intent/tweet?" + "?text=" + encodedMessage;
+        app.innerText = link;
+      }
+
+      const buttonElement = document.getElementById("generateBtn");
+
+      buttonElement.addEventListener("click", generateTwitterLinkAndMessage);
+    </script>
+  </body>
+</html>
