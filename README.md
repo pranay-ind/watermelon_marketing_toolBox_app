@@ -14,6 +14,8 @@ Each mini-tool should exist on its page.
 For example:
 
 /wami-link
+
+
 <img width="475" height="293" alt="{3C79CA2F-9811-4FB5-BB13-9EC464E26D78}" src="https://github.com/user-attachments/assets/d6776611-3344-4689-a656-e7988b90bc04" />
 
 /twitter-share
