@@ -29,12 +29,16 @@ For example:
 
 <img width="469" height="213" alt="{74F18C59-7F1C-419F-A21B-5A7A37A59EF1}" src="https://github.com/user-attachments/assets/9bb923dd-99f7-49c6-9061-d07cba5605ae" />
 ## How does it works 
+
 ## 2 .WAMI link and WhatsApp Message Tool:
 Input fields:
 
 1.Phone number (with country code).
+
 2.Custom message (text area).
+
 3.On button click, generate a link.
+
 4.Display the generated link.
 
 
@@ -44,8 +48,11 @@ Input fields:
 
 Input fields:
 1.Tweet text.
+
 On button click, generate:
+
 <https://twitter.com/intent/tweet?text=><encoded_text>&url=<encoded_url>
+
 Display the generated link.
 
 
@@ -55,8 +62,11 @@ Display the generated link.
 ## 4.GitHub Link Tool
 
 Input fields:
+
 GitHub username
+
 On button click:
+
 If only username is entered: https://github.com/<username>
 
 
