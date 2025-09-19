@@ -41,7 +41,12 @@
     </footer>
     <script>
       function getGithubUrl(githubUser) {
+        if(githubUser === ""){
+          return "pleasr enter username first"
+        }
+        else{
         return "https://github.com/" + githubUser;
+        }
       }
 
       function handleGenerateClick() {
@@ -56,3 +61,4 @@
     </script>
   </body>
 </html>
+
