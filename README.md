@@ -7,8 +7,9 @@ Created with CodeSandbox
 Convert the existing mini-tools (WAMI link, WhatsApp message, Twitter share, GitHub link, etc.) into an integrated Marketing Toolbox with separate routes/pages for each tool.
 
 ## 1. Requirements 
-Core Requirements
-Routing Structure
+
+Routing Structure.
+
 Each mini-tool should exist on its page.
 
 For example:
@@ -31,9 +32,9 @@ For example:
 ## 2 .WAMI link and WhatsApp Message Tool:
 Input fields:
 
-1.Phone number (with country code)
-2.Custom message (text area)
-3.On button click, generate a link
+1.Phone number (with country code).
+2.Custom message (text area).
+3.On button click, generate a link.
 4.Display the generated link.
 
 
@@ -42,7 +43,7 @@ Input fields:
 ## 3. Twitter Share Tool
 
 Input fields:
-1.Tweet text
+1.Tweet text.
 On button click, generate:
 <https://twitter.com/intent/tweet?text=><encoded_text>&url=<encoded_url>
 Display the generated link.
